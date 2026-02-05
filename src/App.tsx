@@ -193,6 +193,11 @@ const learning: string[] = [
   'Model deployment and monitoring best practices.',
 ]
 
+const stats: { label: string; value: string }[] = [
+  { label: 'Projects Completed', value: '7+' },
+  { label: 'AI Models Built', value: '5' },
+]
+
 const socials = {
   email: 'mewanya@gmail.com',
   github: 'https://github.com/binu59',
@@ -508,6 +513,23 @@ Currently, I'm deepening my expertise in GenAI patterns, Power BI visualization,
                 <p className="mt-4 text-white/90">Completed secondary education with a strong academic foundation in core subjects.</p>
               </div>
             </div>
+          </div>
+        </section>
+
+        {/* Learning & Stats */}
+        <section className="section-shell grid gap-6 px-8 py-8 md:grid-cols-[1.1fr_1fr] md:px-10">
+          <div className="flex flex-col gap-3">
+            <h3 className="text-xl font-semibold text-white">Currently Learning</h3>
+            <ul className="list-disc space-y-2 pl-5 text-sm text-muted">
+              {learning.map((item) => (
+                <li key={item}>{item}</li>
+              ))}
+            </ul>
+          </div>
+          <div className="grid grid-cols-1 gap-3 sm:grid-cols-2">
+            {stats.map((stat) => (
+              <Stat key={stat.label} label={stat.label} value={stat.value} />
+            ))}
           </div>
         </section>
 
