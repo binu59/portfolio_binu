@@ -149,6 +149,29 @@ const projects: Project[] = [
     github: 'https://github.com/binu59/Habitflow.git',
     image: 'https://images.unsplash.com/photo-1551650975-87deedd944c3?auto=format&fit=crop&w=1200&q=80',
   },
+  {
+    title: 'Leaf Disease Classifier',
+    description: 'A computer vision project to detect diseased and healthy plants.',
+    techStack: ['PyTorch', 'ResNet18', 'Streamlit'],
+    github: 'https://github.com/binu59/leaf-classifier.git',
+    image: 'https://images.unsplash.com/photo-1501004318641-b39e6451bec6?auto=format&fit=crop&w=1200&q=80',
+  },
+  {
+    title: 'DocMind — AI-Powered PDF Chatbot',
+    description:
+      'A RAG-based conversational AI that lets you upload any PDF and ask questions about it, with source page citations on every answer.',
+    techStack: [
+      'Python',
+      'LangChain',
+      'Google Gemini 2.5 Flash',
+      'ChromaDB',
+      'HuggingFace Sentence Transformers',
+      'Streamlit',
+      'PyPDF',
+    ],
+    github: 'https://github.com/binu59/Q-A-chat_bot.git',
+    image: 'https://images.unsplash.com/photo-1533750349088-cd871a92f312?auto=format&fit=crop&w=1200&q=80',
+  },
 ]
 
 const experiences: Experience[] = [
@@ -194,7 +217,7 @@ const learning: string[] = [
 ]
 
 const stats: { label: string; value: string }[] = [
-  { label: 'Projects Completed', value: '7+' },
+  { label: 'Projects Completed', value: '9+' },
   { label: 'AI Models Built', value: '5' },
 ]
 
@@ -555,7 +578,7 @@ Currently, I'm deepening my expertise in GenAI patterns, Power BI visualization,
             />
           </div>
           <div className="grid gap-5 md:grid-cols-3">
-            {projects.map((project) => (
+            {projects.slice().reverse().map((project) => (
               <ProjectCard key={project.title} project={project} />
             ))}
           </div>
