@@ -142,13 +142,7 @@ const projects: Project[] = [
     github: 'https://github.com/binu59/Recipe-App.git',
     image: 'https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=1200&q=80',
   },
-  {
-    title: 'Habit Flow – Android Application',
-    description: 'An Android application to track daily habits, mood, and water intake.',
-    techStack: ['Android', 'Java', 'Kotlin'],
-    github: 'https://github.com/binu59/Habitflow.git',
-    image: 'https://images.unsplash.com/photo-1551650975-87deedd944c3?auto=format&fit=crop&w=1200&q=80',
-  },
+  
   {
     title: 'Leaf Disease Classifier',
     description: 'A computer vision project to detect diseased and healthy plants.',
@@ -157,7 +151,7 @@ const projects: Project[] = [
     image: 'https://images.unsplash.com/photo-1501004318641-b39e6451bec6?auto=format&fit=crop&w=1200&q=80',
   },
   {
-    title: 'DocMind — AI-Powered PDF Chatbot',
+    title: 'DocMind - AI-Powered PDF Chatbot',
     description:
       'A RAG-based conversational AI that lets you upload any PDF and ask questions about it, with source page citations on every answer.',
     techStack: [
@@ -172,6 +166,61 @@ const projects: Project[] = [
     github: 'https://github.com/binu59/Q-A-chat_bot.git',
     image: 'https://images.unsplash.com/photo-1533750349088-cd871a92f312?auto=format&fit=crop&w=1200&q=80',
   },
+  {
+    title: 'BeatSense - Music Genre Classifier',
+    description:
+      'LSTM-based music genre classifier (80.9% accuracy, 5 genres) with MFCC feature extraction and a Streamlit demo..',
+    techStack: [
+      'Python',
+      'TensorFlow/keras',
+      'Librosa',
+      'scikit-learn',
+      'HuggingFace datasets',
+      'Streamlit',
+      
+    ],
+    github: 'https://github.com/binu59/Music-genre-classifier.git',
+    image: 'https://unsplash.com/photos/neon-pink-and-purple-light-particles-9XngoIpxcEo',
+  },
+
+  {
+    title: 'Finsight-Agent',
+    description:
+      'LSTM-based music genre classifier (80.9% accuracy, 5 genres) with MFCC feature extraction and a Streamlit demo..',
+    techStack: [
+      'Python',
+      'LangChain',
+      'LlamaIndex',
+      'Gemini API',
+      'Tavily API',
+      'yfinance',
+      'Streamlit',
+      
+    ],
+    github: 'https://github.com/binu59/finsight-agent.git',
+    image: 'https://unsplash.com/photos/turned-on-monitoring-screen-qwtCeJ5cLYs',
+  },
+
+  {
+    title: 'Sri Lankan IT/Tech Job Market Analyser',
+    description:
+      'End-to-end data analytics project scraping 700+ real job listings from ikman.lk, featuring preprocessing, EDA, NLP-based skill extraction, and an interactive Streamlit dashboard',
+    techStack: [
+      'Python',
+      'BeautifulSoup4',
+      'Pandas',
+      'Numpy',
+      'Seaborn',
+      'Plotly',
+      'Regex',
+      'Jupyter Notebook',
+      'Streamlit',
+      
+    ],
+    github: 'https://github.com/binu59/job-scraping.git',
+    image: 'https://unsplash.com/photos/a-computer-circuit-board-with-a-brain-on-it-_0iV9LmPDn0',
+  },
+
 ]
 
 const experiences: Experience[] = [
